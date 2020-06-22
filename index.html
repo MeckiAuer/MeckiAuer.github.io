@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title></title>
+    <link rel="stylesheet" href="style.css" />
+
+    </style>
+</head>
+
+<body>
+    <!-- HEADER (Center website) -->
+    <header>
+        <div class="rowheader">
+            <div class="columnheaderleft">
+                <div class="headercontent">
+                    <img src="images/me_color.png" width="100%">
+                </div>
+            </div>
+            <div class="columnheader">
+                <div class="headercontentright">
+                    <h1>PORTFOLIO</h1>
+                    <hr>
+                    <h3>MARGARETHE AUER</h3>
+                    <h5>Diplomierte Fachwirtin für Medieninformatik und Mediendesign</h5>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- MAIN (Center website) -->
+    <div class="main">
+        <div id="myBtnContainer">
+            <button class="btn active" onclick="filterSelection('all')"> SHOW ALL</button>
+            <button class="btn" onclick="filterSelection('ui')"> UI DESIGN</button>
+            <button class="btn" onclick="filterSelection('print')"> GRAPHIC DESIGN</button>
+            <button class="btn" onclick="filterSelection('2D')"> 2D</button>
+            <button class="btn" onclick="filterSelection('3D')"> 3D</button>
+            <button class="btn" onclick="filterSelection('stopmotion')"> STOP MOTION ANIMATION</button>
+        </div>
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <div id="caption"></div>
+            <div class="modal-content" id="imageloader"></div>
+        </div>
+        <!-- Portfolio Gallery Grid -->
+        <div class="row ui">
+            <div class="content">
+                <div class="card">
+                    <h3>UI DESIGN</h3>
+                    <h5>FIGMA | SKETCH | XD</h5>
+                    <p>FIGMA Clickdummy of this very site.</p>
+                    <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="1200" height="450"
+                        src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FuH0OnL0EYZmlPtvzqpl4c7%2FPortfolio-Prototype%3Fnode-id%3D1%253A2%26viewport%3D-633%252C1350%252C0.5933887958526611%26scaling%3Dcontain&chrome=DOCUMENTATION"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="row print">
+            <div class="content">
+                <h3>GRAPHIC DESIGN</h3>
+                <h5>PHOTOSHOP | ILLUSTRATOR | INDESIGN</h5>
+            </div>
+            <div class="column">
+                <div class="content">
+                    <p>Corporate Design</p>
+                    <h5>WWW.SPRINGREITEN-LIVE.COM</h5>
+                    <div class="card">
+                        <img src="images/print/springreiten/flyerweb2.png"
+                            alt="Corporate Design - Project Graphic Design WIFI Klagenfurt" width="100%"
+                            class="springreiten">
+                        <h4>Final project "Graphic Design"</h4>
+                        <p>Fachakademie für Medieninformatik und Mediendesign, WIFI Klagenfurt</p>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="content">
+                    <p>Logoredesign</p>
+                    <h5>DIE HEILMASSEURIN</h5>
+                    <div class="card">
+                        <img src="images/print/heilmasseurin/heilmasseurin.png" alt="Mockup heilmasseurin"
+                            style="width:100%" class="heilmasseurin">
+                        <h4>Logo - Redesign</h4>
+                        <p>Flyer | Business Card</p>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="content">
+                    <p>Logodesign</p>
+                    <h5>GEDANKENGUT</h5>
+                    <div class="card">
+                        <img src="images/print/gedankenGUT/gedankengut.png" alt="Photography" style="width:100%">
+                        <h4>Logodesign & Advertising Materials</h4>
+                        <p>Flyer | Business Card</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row 2D">
+            <div class="content">
+                <div class="card">
+                    <h3>2D ANIMATION</h3>
+                    <h5>ILLUSTRATOR | AFTER EFFECTS | CINEMA 4D</h5>
+                    <p>A Short Bio</p>
+                    <iframe src="https://player.vimeo.com/video/370566675" width="1200" height="450" frameborder="0"
+                        allow="autoplay; fullscreen" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="row 3D">
+            <div class="content">
+                <h3>3D</h3>
+                <h5>ILLUSTRATOR | BLENDER 2.82a | CINEMA 4D</h5>
+                <!--                <iframe src="https://player.vimeo.com/video/370566675" width="800" height="450" frameborder="0"
+                    allow="autoplay; fullscreen" allowfullscreen></iframe>-->
+            </div>
+            <div class="column">
+                <div class="content">
+                    <p>Mockup</p>
+                    <h5>SPRINGREITEN-LIVE.COM</h5>
+                    <div class="card">
+                        <img src="images/3D/print.png" alt="Mockup | SPRINGREITEN-LIVE" style="width:100%"
+                            class="springen">
+                        <h5>BLENDER 2.82a | Cycles Render</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="content">
+                    <p>Mockup</p>
+                    <h5>DIE HEILMASSEURIN</h5>
+                    <div class="card">
+                        <img src="images/3D/heilmasseurin.png" alt="Mockup | Die Heilmasseurin" style="width:100%"
+                            class="sourceheilmass">
+                        <h5>BLENDER 2.82a | Cycles Render</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="content">
+                    <p>Mockup</p>
+                    <h5>GEDANKENGUT</h5>
+                    <div class="card">
+                        <img src="images/3D/gedankengut.png" alt="Mockup | gedankenGUT" style="width:100%"
+                            class="sourcegedanken">
+                        <h5>BLENDER 2.82a | Cycles Render</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row stopmotion">
+            <div class="content">
+                <div class="card">
+                    <!--<img src="bear.jpg" alt="Stop Motion Animation" style="width:100%">-->
+                    <h3>STOP MOTION ANIMATION</h3>
+                    <h5>ILLUSTRATOR | AFTER EFFECTS | CINEMA 4D | PREMIERE</h5>
+                    <p>Both analog and digital stopmotion projects</p>
+                    <h4>Analog Stop Motion Project</h4>
+                    <h5></h5>
+                    <p>Fujica ST701, Ilford HP5</p>
+                    <iframe src="https://player.vimeo.com/video/96066521" max-width="100%" height="500" frameborder="0"
+                        allow="autoplay; fullscreen" allowfullscreen></iframe>
+                    <h4>Final Project "Multimediadesign"</h4>
+                    <p>Fachakademie für Medieninformatik und Mediendesign, WIFI Klagenfurt</p>
+                    <iframe src="https://player.vimeo.com/video/277878269" width="100%" height="500" frameborder="0"
+                        allow="autoplay; fullscreen" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- END MAIN -->
+
+
+</body>
+<script src="main.js"></script>
+
+</html>

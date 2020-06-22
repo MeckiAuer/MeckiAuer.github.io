@@ -1,0 +1,373 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+hr {
+    border: 0.5px solid #ffc107;
+}
+
+body {
+  padding: 20px;
+}
+
+/* Center website */
+.main {
+  max-width: 1230px;
+  margin: auto;
+  background-color: #fff;
+}
+
+h1 {
+  font-size: 1em;
+  word-break: break-all;
+}
+
+h3 {
+    font-size: 20px;
+
+}
+header {
+    max-width: 1200px;
+    margin: auto;
+    background-color: #fff;
+}
+
+
+.columnheaderleft img {
+    background-color: white;
+    width: 100%;
+    display: block;
+    margin: 0px;
+    margin: auto;
+    padding: 5%;
+    min-width: 90%;
+}
+
+.columnheaderleft {
+    float: left;
+    width: 15%;
+    display: block;
+}
+.headercontentright {
+    width: 100%;
+    display: block;
+}
+.columnheader {
+    float: left;
+    width: 85%;
+
+  }
+.row {
+  margin: 8px -16px;
+  background-color: #fff;
+}
+
+.rowheader {
+    margin: 8px -16px;
+  }
+
+/* Add padding BETWEEN each column (if you want) */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33%;
+}
+
+/* Clear floats after rows */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.rowheader:after{
+    content: "";
+    display: table;
+    clear: both;
+  
+}
+
+/* Content */
+.content {
+  background-color: #fff;
+  padding: 0px;
+  display: block;
+  padding: 10px;
+  width: 100%;
+}
+
+
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 1024px) {
+  .column {
+    width: 100%;
+  }
+  iframe {
+      width: 95%;
+  }
+.columnheaderleft {
+    width: 25%;
+}
+img.modal-content:first-of-type {
+  max-width: 100%;
+}
+.btn {
+  width: 100%;
+}
+}
+
+
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    padding: 1px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  .card {
+    padding: 1%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  p {
+    margin: 0px;
+  }
+
+  iframe {
+    width: 85%;
+    height: 100%;
+  }
+  .columnheaderleft {
+      width: 25%;
+  }
+  .btn{
+    width: 100%;
+}
+.content {
+  padding: 2px;
+}
+h1 {
+  font-size: 0.9rem;
+}
+
+h3 {
+  font-size: 0.87rem;
+  line-height: 0.87rem;
+}
+h5 {
+  font-size: 0.75rem;
+  line-height: 0.75rem;
+  vertical-align: bottom;
+}
+img.modal-content:first-of-type {
+  max-width: 100%;
+}
+
+
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+    display: none;
+  }
+  
+
+  #myBtnContainer {
+    text-align: justify;
+    min-width: 200px;
+}
+#myBtnContainer:after {
+    content: '';
+    display: inline-block;
+    width: 100%;
+}
+
+  /* Style the buttons */
+  .btn {
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    background-color: white;
+    cursor: pointer;
+    border-bottom: 5px solid rgba(62,39,32, 0.25);
+    border-radius: 4px;
+    min-width: 200px;
+  }
+  
+  /* Add a brownish background color on mouse-over */
+  .btn:hover {
+    background: rgba(62,39,32, 0.25);
+    color: #000;
+  }
+  
+  /* Add a dark background color to the active button */
+  .btn.active {
+    background-color: #3E2723;
+     color: white;
+     border-bottom: 5px solid #ffc107;
+     
+  }
+
+  .card {
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: inset -1px 0px 3px 0px rgba(0, 0, 0, .25);
+    padding: 5px;
+    border-bottom: 5px solid;
+    border-bottom-color: #ffc107;
+    overflow: visible;
+ 
+}
+
+.springreiten:hover, .heilmasseurin:hover {
+  opacity: 0.7;
+cursor: pointer;
+}
+
+.sourcegedanken:hover, .sourceheilmass:hover, .springen:hover {
+  opacity: 0.7;
+cursor: pointer;
+}
+
+iframe {
+  width: 90%;  
+  margin: 2%;
+  background-color: #000;
+}
+
+/* ++++++++++++++Modal+++++++++++++++++++++++++++*/
+.modals:hover {
+  opacity: 0.7;
+cursor: pointer;
+}
+
+
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 50px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  /*margin: 1%;*/
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-evenly;
+  vertical-align: top;
+  width: 90%;
+}
+
+img.modal-content:first-of-type {
+  padding: 0px;
+  margin: 3%;
+  max-width: 100%;
+}
+
+
+img.modal-content {
+  max-width: 30%;
+  margin: 1%;
+}
+
+
+
+
+/*.modal-content.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}*/
+
+/* Create four equal columns that sits next to each other
+.modal-content.column {
+  flex: 50%;
+  max-width: 50%;
+  padding: 0 4px;
+}
+
+.modal-content img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+} */
+
+
+
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  /*height: 150px;*/
+}
+
+/* Add Animation
+.modal-content, #caption {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+} 
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+*/
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+} */
