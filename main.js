@@ -24,9 +24,19 @@ let sourceheilmasseurin = [
 let sourcegedanken = [
 'images/3D/gedankengut.png'
 ];
+
+let sourceatse = [
+  'images/print/ATSE Graz/ATSE_print.png',
+  'images/web/roster1.png',
+  'images/web/roster2.png',
+  'images/web/staff.png'
+
+];
+
 var modal = document.getElementById("myModal");
 var modalImg = document.getElementById("imageloader");
 var captionText = document.getElementById("caption");
+
 
 
 
@@ -41,6 +51,8 @@ function popup_modal() {
     fillmodal(sourceheilmasseurin);
   } else if (this.className == "sourcegedanken") {
     fillmodal(sourcegedanken);
+  } else if (this.className == "atse") {
+    fillmodal(sourceatse);
     modalImg.style.position = "top";
   } 
 
@@ -99,7 +111,7 @@ function fillmodal(listofimages) {
 // code that´s being run below
 var i, j, sourceimages;
 var topics = [
-  "springreiten", "heilmasseurin", "gedankengut", "springen", "sourceheilmass", "sourcegedanken"
+  "springreiten", "heilmasseurin", "gedankengut", "springen", "sourceheilmass", "sourcegedanken", "atse"
 ];
 
 for (i = 0; i < topics.length; i++) {

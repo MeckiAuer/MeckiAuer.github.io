@@ -4,6 +4,32 @@
 }
 
 
+  /* unvisited link */
+a:link {
+  color: black;
+  text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+  color: black;
+  font-weight: 500;
+  /*font-size:larger;*/
+}
+
+/* selected link */
+a:active {
+  color:black;
+  text-decoration: none;
+}
+
+
 hr {
     border: 0.5px solid #ffc107;
 }
@@ -74,10 +100,10 @@ header {
   padding: 8px;
 }
 
-/* Create four equal columns that floats next to each other */
+/* Create two equal columns that floats next to each other */
 .column {
   float: left;
-  width: 33%;
+  width: 49%;
 }
 
 /* Clear floats after rows */
@@ -237,7 +263,7 @@ img.modal-content:first-of-type {
 cursor: pointer;
 }
 
-.sourcegedanken:hover, .sourceheilmass:hover, .springen:hover {
+.sourcegedanken:hover, .sourceheilmass:hover, .springen:hover, .atse:hover {
   opacity: 0.7;
 cursor: pointer;
 }
@@ -371,3 +397,15 @@ img.modal-content {
     width: 100%;
   }
 } */
+
+video {
+  margin: auto;
+  max-width:85%;
+  display: block;
+  padding-bottom: 3%;
+}
+
+iframe {
+  margin: auto;
+  display: block;
+}
